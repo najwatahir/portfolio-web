@@ -578,6 +578,8 @@ h3 {
   flex: 1;
 }
 
+
+
 .date {
   color: #aaa;
   font-size: 1rem;
@@ -585,7 +587,7 @@ h3 {
 }
 
 .card {
-  background-color: #bda9d2;
+  background-color: #d9bbf8;
   padding: 20px;
   border-radius: 10px;
 }
@@ -901,16 +903,13 @@ p,
   }
 
   .skill-box {
-    width: 140px; /* Consistent width on mobile */
+    width: 140px;
   }
 
   .out-card {
-    width: 90%; /* Use percentage for mobile */
+    width: 90%;
     max-width: 300px;
   }
-
-
-  /* Reset any potential inherited margins */
   .about-me,
   .about-line,
   .title,
@@ -919,13 +918,15 @@ p,
     margin-right: auto;
   }
 
-  /* Ensure images don't overflow */
   img {
     max-width: 80%;
     height: auto;
   }
 
-  /* Center project boxes */
+  .project-padding img {
+    max-width: 100%;
+  }
+
   .project-box {
     margin-left: auto;
     margin-right: auto;
