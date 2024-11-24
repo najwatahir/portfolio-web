@@ -766,11 +766,10 @@ h3 {
 .project-padding h1,
 p,
 .project-icon {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #contact {
-  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -985,11 +984,11 @@ a {
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .description {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .logo img {
@@ -1014,7 +1013,7 @@ a {
   }
 
   .about-desc {
-    font-size: 1.375rem;
+    font-size: 1rem;
     line-height: 2rem;
   }
 
@@ -1059,6 +1058,7 @@ a {
     text-align: center;
     font-size: 1rem;
     transition: 0.3s ease;
+    cursor: pointer;
   }
 
   .nav-links.active {
@@ -1071,11 +1071,12 @@ a {
     width: 40px;
     margin-left: auto;
     position: relative;
+    cursor: pointer;
   }
 
   .ham-menu span {
-    height: 5px;
-    width: 100%;
+    height:3px;
+    width: 90%;
     background-color: #1b1f2c;
     border-radius: 25px;
     position: absolute;
@@ -1083,6 +1084,10 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s ease;
+  }
+
+  .ham-menu span:hover {
+    cursor: pointer;
   }
 
   .ham-menu span:nth-child(1) {
@@ -1160,14 +1165,33 @@ a {
   .contact-info {
     margin-top: 1rem;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  .contact-desc {
+    width: 100%;
   }
 
   .inline-flex {
     text-align: center;
   }
 
+  .inline-flex a p {
+    font-size: 1rem;
+  }
+
+  .header {
+    padding: 5px 5px;
+  }
+
+  .contact-info p {
+  font-size: 1rem;
+  color: #1b1f2c;
+  text-align: center;
+}
+
+.contact-desc {
+  width: 100%;
+}
 }
 
 @media (min-width: 1024px) {
