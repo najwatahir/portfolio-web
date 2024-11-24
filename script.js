@@ -24,3 +24,38 @@ navLink.addEventListener("click", (event) => {
   }
 });
 
+const form = document.getElementById("contactForm");
+const popup = document.getElementById("popup");
+const closeBtn = document.querySelector(".close-btn");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  fetch("https://formspree.io/f/mleyznva", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset();
+      } else {
+        alert("There was a problem with the submission.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("There was a problem with the submission.");
+    });
+});
+
+closeBtn.addEventListener("click", function () {
+  popup.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+});
