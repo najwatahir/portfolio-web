@@ -1,3 +1,5 @@
+const year = document.getElementById("year").textContent = new Date().getFullYear();
+
 const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {

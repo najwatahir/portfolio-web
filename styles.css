@@ -950,6 +950,20 @@ a {
   resize: vertical;
 }
 
+footer {
+  background-color: #fff;
+  margin-right: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.375rem;
+}
+
+#year {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
 /*mobile style*/
 @media screen and (max-width: 768px) {
   .menu-toggle {
