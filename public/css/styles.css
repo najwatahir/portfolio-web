@@ -1206,6 +1206,10 @@ footer {
 .contact-desc {
   width: 100%;
 }
+
+  footer p {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
