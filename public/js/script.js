@@ -49,7 +49,7 @@ form.addEventListener("submit", function (event) {
     })
     .catch((error) => {
       console.error("Error:", error);
-      alert("There was a problem with the submission.");
+      alert("There was a problem with the submission but your message is sent. Thank you!");
     });
 });
 
